@@ -1,0 +1,59 @@
+{
+    "TS React Functional Component": {
+        "prefix": "tsrfc",
+        "description": "Creates a TS React functional component",
+        "body": [
+            "import React from \"react\";",
+            "",
+            "type $1Props = {",
+            "};",
+            "",
+            "export default function $1(props: $1Props) {",
+            "  return (",
+            "    <div>$0</div>",
+            "  );",
+            "}"
+        ]
+    },
+    "TS React Use State": {
+        "prefix": "tsrus",
+        "description": "Adds a TS React use state declaration",
+        "body": "const [$1, set${1/(.)/${1:/capitalize}/}] = React.useState($0);"
+    },
+    "TS React Use Effect": {
+        "prefix": "tsrue",
+        "description": "Adds a TS React use effect declaration",
+        "body": [
+            "React.useEffect(() => {",
+            "  $0",
+            "  return () => {",
+            "  };",
+            "}, []);"
+        ]
+    },
+    "TS React Use Memo": {
+        "prefix": "tsrum",
+        "description": "Adds a TS React use memo declaration",
+        "body": [
+            "React.useMemo(() => {",
+            "  $0",
+            "}, []);"
+        ]
+    },
+    "TS React Use Callback": {
+        "prefix": "tsruc",
+        "description": "Adds a TS React use callback declaration",
+        "body": [
+            "React.useCallback(() => {",
+            "  $0",
+            "}, []);"
+        ]
+    },
+    "TS React Use Reference": {
+        "prefix": "tsrur",
+        "description": "Adds a TS React use reference declaration",
+        "body": [
+            "React.useRef<$1>($0);"
+        ]
+    }
+}
